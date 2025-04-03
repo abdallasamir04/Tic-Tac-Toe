@@ -94,6 +94,7 @@ This project demonstrates GUI development, game logic implementation, and basic 
     - click.wav
     - lose.wav
     - win.wav
+    - draw.wav
       
   - game_logic.py : Core game rules, AI logic, board state
     
