@@ -87,24 +87,7 @@ This project demonstrates GUI development, game logic implementation, and basic 
 
 ## 📂 Project Structure :
 
-TICTACTOEGAME/
-│
-├── __pycache__/  # Python bytecode cache (auto-generated)
-│
-├── sounds/  # Directory for sound files
-│   ├── click.wav
-│   ├── lose.wav
-│   └── win.wav
-│
-├── game_logic.py  # Core game rules, AI logic, board state
-│
-├── gui.py  # Tkinter GUI implementation, event handling
-│
-├── main.py  # Main script to run the application
-│
-├── README.md  # This file
-│
-└── themes.py  # Theme definitions (colors)
+TICTACTOEGAME/ |— __pycache__/ # Python bytecode cache (auto-generated) |— sounds/ # Directory for sound files |— click.wav |— lose.wav |— win.wav |— game_logic.py # Core game rules, AI logic, board state |— gui.py # Tkinter GUI implementation, event handling |— main.py # Main script to run the application |— README.md # This file |— themes.py # Theme definitions (colors)
 
 ---
 
