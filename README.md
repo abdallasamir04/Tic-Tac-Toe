@@ -6,7 +6,7 @@
 ![Pygame](https://img.shields.io/badge/Sound-Pygame-lightblue.svg)
 
 **Tic-Tac-Toe Pro GUI** is a classic Tic-Tac-Toe game implemented with a graphical user interface using Python's **Tkinter** library.                  
-It features an intelligent AI opponent with adjustable difficulty levels, multiple visual themes, and optional sound effects (requires **Pygame**).
+It features an intelligent AI opponent with adjustable difficulty levels, multiple visual themes, and optional sound effects (requires **Pygame**).    
 This project demonstrates GUI development, game logic implementation, and basic AI principles (Minimax). Developed by **_Abdalla Samir_**.
 
 ---
