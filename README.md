@@ -87,7 +87,11 @@ This project demonstrates GUI development, game logic implementation, and basic 
 
 ## 📂 Project Structure :
 
-TICTACTOEGAME/
+
+## 🙏 Acknowledgments
+
+
+    TICTACTOEGAME/
 │
 ├── __pycache__/  # Python bytecode cache (auto-generated)
 │
@@ -105,6 +109,7 @@ TICTACTOEGAME/
 ├── README.md  # This file
 │
 └── themes.py  # Theme definitions (colors)
+
 
 ---
 
