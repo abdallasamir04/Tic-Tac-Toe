@@ -45,7 +45,7 @@ This project demonstrates GUI development, game logic implementation, and basic 
 
 1.  **Clone the repository:**
     ```bash
-    git clone : 
+    git clone : https://github.com/abdallasamir04/Tic-Tac-Toe.git
     cd TICTACTOEGAME
     ```
 2.  **Ensure Python is installed.** (Developed with Python 3.x)
@@ -86,7 +86,7 @@ This project demonstrates GUI development, game logic implementation, and basic 
 ---
 
 ## 📂 Project Structure :
-TICTACTOEGAME/
+[TICTACTOEGAME/
 │
 ├── pycache/ # Python bytecode cache (auto-generated)
 │
@@ -100,7 +100,6 @@ TICTACTOEGAME/
 ├── main.py # Main script to run the application
 ├── README.md # This file
 └── themes.py # Theme definitions (colors)
-
 ---
 
 
