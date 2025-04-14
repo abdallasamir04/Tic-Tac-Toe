@@ -521,22 +521,31 @@ class TicTacToeGUI:
         self.draw_label.config(text=f"Draws: {self.draw_count}")
         self.ai_label.config(text=f"AI: {self.ai_score}")
 
-    def restart_game(self):
+       
+    def restart_game(self): 
         if not self.player_symbol:
-            return
+            return 
 
         if self.sound_enabled:
-            pygame.mixer.stop()
+            try:
+                pygame.mixer.stop()
+            except pygame.error as e:
+                print(f"Pygame mixer stop error (ignored): {e}")
 
+        
         self.board = gl.init_board()
+        
         self.game_active = True
+        
         self.update_button_styles()
 
-        if self.player_symbol == gl.AI_O:
+        
+        if self.turn_var.get() == "second":  
             self.update_status("AI's turn")
             self.window.after(500, self.perform_ai_move)
-        else:
+        else:  
             self.update_status("Your turn!")
+       
 
     def quit_game(self):
         if self.sound_enabled:
