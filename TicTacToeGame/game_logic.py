@@ -10,15 +10,13 @@ MEDIUM = "Medium"
 HARD = "Hard"
 
 def init_board():
-    """Create and return an empty 3x3 game board."""
+    
     return [[EMPTY for _ in range(3)] for _ in range(3)]
 
 def get_available_moves(board):
-    """Return list of (row, col) tuples for empty cells."""
     return [(i, j) for i in range(3) for j in range(3) if board[i][j] == EMPTY]
 
 def is_board_full(board):
-    """Check if board has no empty cells left."""
     return all(board[i][j] != EMPTY for i in range(3) for j in range(3))
 
 def check_winner(board, player):
@@ -31,7 +29,7 @@ def check_winner(board, player):
     return False
 
 def get_winning_line(board):
-    """Return winning line coordinates if there's a winner."""
+    
     for r in range(3):
         if all(board[r][c] == board[r][0] and board[r][0] != EMPTY for c in range(3)):
             return [(r, c) for c in range(3)]
@@ -45,13 +43,11 @@ def get_winning_line(board):
     return None
 
 def evaluate_board(board, ai_symbol, player_symbol):
-    """Evaluate board state for the AI."""
     if check_winner(board, ai_symbol): return 1
     elif check_winner(board, player_symbol): return -1
     else: return 0
 
 def minimax(board, depth, is_maximizing, alpha, beta, ai_symbol, player_symbol):
-    """Minimax algorithm with alpha-beta pruning."""
     score = evaluate_board(board, ai_symbol, player_symbol)
 
     if score == 1 or score == -1: return score
@@ -83,7 +79,6 @@ def minimax(board, depth, is_maximizing, alpha, beta, ai_symbol, player_symbol):
         return best_score
 
 def ai_move(board, difficulty=HARD, ai_symbol=AI_O):
-    """Determine AI move based on difficulty level."""
     available_moves = get_available_moves(board)
     if not available_moves: return None
 
